@@ -55,24 +55,6 @@ if settings.startup["wood-logistics-belts"].value then
   })
 end
 
--------------------------------------------------------------------------- Inserters
-
-if settings.startup["wood-logistics-inserter"].value then
-  data:extend({
-    {
-      type = "recipe",
-      name = "wood-corner-inserter",
-      enabled = false,
-      ingredients = {
-        {type="item", name=wood_item, amount=1},
-        {type="item", name="iron-gear-wheel", amount=1},
-        {type="item", name="copper-cable", amount=1}
-      },
-      results = {{type="item", name="wood-inserter", amount=1}}
-    }
-  })
-end
-
 -------------------------------------------------------------------------- Electric poles
 
 if settings.startup["wood-logistics-big-electric-pole"].value then
